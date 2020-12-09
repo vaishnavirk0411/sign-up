@@ -1,0 +1,548 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+*body{
+	font-family: 'Oxygen', sans-serif;
+}
+
+.navbar{     /*background style of heading*/
+	background: #010155;
+	padding: 8px 8px;
+	transition: padding 2s ease;
+
+}
+.navbar a.active{
+	background-color: #fff;
+
+}
+.navbar-brand{ /*name*/
+	font-family: 'Lobster',serif;
+  color: #fff;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2.5px 2.5px 2.5px #5dade2;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  
+}
+.logo img{
+	width: 100px;
+	float: left;
+	height: 100px;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.nav-link:hover{
+	background: #fff;
+	color: #d3d3d3;
+	margin-top: 70px;
+}
+
+.nav-active{
+	color: #fff;
+	font-size: 23px;
+	padding: 2px 4px;
+	border-radius: 5px;
+	margin-bottom: 0px;
+	margin-top: 70px;
+	font-family: 'Philosopher',serif;
+
+	/*background: rgba(83,83,248,0.322);*/
+	transition: background 2s ease;
+}
+.nav-active:hover{
+	background: #1717f0;
+	
+}
+.nav-item a.active{
+	background-color: #1717f0;
+}
+
+/*--Banner--*/
+.banner{
+	
+	height: 110vh;
+	background: url('./images/site.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+.heading{
+	text-align:center;
+	color: #fff;/*white*/ 
+}
+.heading h1{
+	font-weight: bold;
+	font-size: 55px;
+	font-family: 'Dancing Script',serif;
+}
+.heading p1{
+	font-size: 25px;
+	color: #cfcfc4;
+}
+.btn-main{
+	background: #fff;
+	color: #01012e;
+border-radius: 10px 20px;
+display: inline-block;
+vertical-align: middle;
+transform:perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0,0,0,0);
+transition-duration: 0.3s;
+transition-property: transform;
+transform-origin: 0 100%;
+
+}
+.btn-main:hover, .btn-main:focus, .btn-main:active{
+	transform: #01012e;
+	font-weight: bold;
+
+}
+
+/*--End--*/
+.about h6{
+	font-size: 20px;
+	color: #3b3bff;
+	font-weight: bold;
+	}
+	.about h2{
+		font-weight: bold;
+		color: #00009d;
+		}
+	.about p{
+		font-size: 18px;
+		color: #01012e;
+	}
+	.fas{
+		color: #2727ff;
+	}
+	
+	.far{
+		color: yellow;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	
+	.fa{
+		color: #fff;
+		padding: 2px 4px;
+	border-radius: 5px;
+	}
+	
+	
+}
+	.about .title-border{
+		content: "";
+		width: 30%;
+		height: :2px;
+		display: block;
+		background: block;
+		background-color: #01012e;
+		border-radius: 50%;
+		margin: 1%;
+		margin-left: 35%;
+
+	}
+	.contact .fas{
+		color: #01012e;
+
+	}
+	.contact .far{
+		color: #01012e;
+
+	}
+	.btn-cont{
+		background: #010155;
+		color: #fff;
+	}
+	.btn-cont:hover{
+		color: #fff;
+		border-radius: 10px 20px 10px 20px;
+	}
+	.contact-us h2{ /*contact-us name*/
+		font-weight: bold;
+		text-align: center;
+		justify-content: center;
+		color: #dc143c;
+		font-family: 'Lora', serif;
+		margin-bottom: 20px;
+		margin-left: 110px;
+
+	}
+	.contact-us p{
+		margin-left: 110px;
+	}
+	.contact-us mt-3{
+		color: #4e4eb1;
+		font-size:20px;
+	}
+	.projects h2{   /*residential project*/
+	font-weight: bold;
+		font-size: 30px;
+		color: #dc143c;
+		margin-bottom: 20px;
+		font-family: 'Lora', serif;
+	}
+	.projects h3{
+		font-size: 30px;
+		font-weight: bold;
+		
+	}
+	
+	.column h5{
+		
+		font-size: 40px;
+		margin-top: 10px;
+		font-weight: bold;
+		color: #15317e;
+		font-family: 'Peddana', serif;
+		margin-bottom: 10px;
+	}
+	.column p{
+		line-height: 8px;
+		font-size: 16px;
+	}
+	.column a{
+		margin-bottom: 20px;
+	}
+	ul.socialIcons {
+  padding: 0;
+  text-align: center;
+  background: #010155;
+}
+.socialIcons p{
+	color: white;
+
+}
+.copy p{
+	color: #fff;
+	text-align:center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 30px;
+	background-color: #010155;
+	
+}
+.copy1{
+	color: white;
+	font-size: 16px;
+	text-align:center;
+	justify-content: center;
+	margin-top: 10px;	
+	background-color: #010155;
+	
+}
+#foot{}
+.socialIcons li {
+  background: #010155;
+  list-style: none;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.socialIcons li a {
+  display: block;
+  padding: 0.5em;
+  min-width: 1.28571429em;
+  max-width: 1.28571429em;
+  height: 1.28571429em;
+  white-space: nowrap;
+  line-height: 40px; /*it's working only when you write text with icon*/
+  transition: 0.5s;
+  text-decoration: none;
+  margin-left: 4px; 
+  font-family: arial;
+  color: #fff;
+}
+
+.socialIcons li i {
+  
+  font-size: 20px;
+  transition: all 0.3s linear;
+}
+
+.socialIcons li:hover i {
+    transform: scale(1.8);
+}
+
+.socialIcons .facebook {
+  background-color: #3b5998;
+  box-shadow: 0 0 16px #3b5998;
+}
+
+.socialIcons .twitter {
+  background-color: #00aced;
+  box-shadow: 0 0 16px #00aced;
+}
+
+.socialIcons .instagram {
+  background-color: #cd486b;
+  box-shadow: 0 0 16px #cd486b;
+}
+
+.socialIcons .youtube {
+  background-color: #c92228;
+  box-shadow: 0 0 16px #c92228;
+}
+
+.socialIcons .linkedin {
+  background-color: #0e76a8;
+  box-shadow: 0 0 16px #0e76a8;
+}
+
+.socialIcons .whatsapp {
+  background-color: #25d366;
+  box-shadow: 0 0 16px #0e76a8;
+}
+.search{
+	font-size: 25px;
+	margin-top: 70px;
+	color: #fff;
+	margin-left: 10px;
+
+
+}
+.socialIcons h1{
+	margin-bottom: 20px;
+	color: white;
+	font-size: 16px;
+}
+.alignleft{
+	float: left;
+	margin-left: 50px;
+	text-align: justify;
+}
+.dropbtn {
+  background-color: #010155;
+  color: white;
+ margin-top: 70px;
+  font-size: 23px;
+  font-family: 'Philosopher',serif;
+  padding: 2px 5px;
+	border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family: 'Philosopher',serif;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #1717f0;}
+
+/*sign-up*/
+/*
+.header{
+  background-color: #002147;
+}
+div.header{
+color: white;
+margin: 1px;
+padding: 1px;
+}
+h1.header{
+  display: inline-block;
+  padding-left: 5%;
+  padding-right:20%;
+  margin: auto;
+  color: #FFFFFF;
+  font-size: 15vh;
+  font-family:Brush Script MT, Brush Script Std, cursive ;
+
+}
+div.logo{
+  display: inline-block;
+  padding: 1%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color:#f5dbff;
+	font-family: 'Open Sans', sans-serif;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+}
+*/
+.formc{
+	display: flex;
+	padding: 5%;
+	padding-left: 75vh;
+}
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+.header{
+	background-color: #010155;
+	height: 100px;
+	
+}
+.header h1{
+	color: #fff;
+     font-size: 2.5em;
+
+}
+.header1 {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #010155;
+  padding: 20px 40px;
+}
+
+.header1 h2 {
+  margin-left: 100px;
+  display: inline;
+  text-align: center; 
+  color: #fff;
+}
+
+.form {
+  padding: 30px 40px; 
+
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-family: 'Philosopher',serif;
+  font-size: 20px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  background-color: #002147;
+  border: 2px solid #002147;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+.helpbtn {
+  float: right;
+  display: inline-block;
+  width: auto;
+  font-family: inherit;
+  background-color: #002147;
+  border: 2px solid #002147;
+  color: #fff;
+  border-radius: 4px;
+  margin: 0;
+  padding: 4px;
+}
+
+
+
+
+
+
+
+
+

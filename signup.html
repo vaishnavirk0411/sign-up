@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href='https://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+    <title>Vastushilp Constructions</title>
+    <script language="Javascript" type="text/javascript">
+
+
+    function w1()
+    {
+    window.location.href="widcontent1.html"
+    }
+  function regular()
+  {
+
+  var UserName=document.getElementById("txtName").value;
+  var Password=document.getElementById("txtpassword").value;
+  var cpassword=document.getElementById("txtcpassword").value;  
+  var Email=document.getElementById("txtemail").value;
+  var Surname=document.getElementById("txtsurname").value;
+  var re=/^[a-zA-Z]{3,15}$/
+  var ke=/^[a-zA-Z]{3,15}$/
+  var se=/^(?=^.{3,10}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/
+  var de=/^([a-z]|[A-Z])+([a-z]|[A-Z]|[0-9]|\W)+[@]+(gmail|hotmail|yahoo)+(\.com)+$/
+
+    if(re.test(UserName)&&se.test(Password)&&de.test(Email)&&ke.test(Surname))
+    {
+      setCookie();
+      w1();
+      var myArray=re.exec(UserName)
+    }
+    if(!re.test(UserName) )
+    {
+      alert('Please enter valid Name ')
+
+    }
+    if(!ke.test(Surname) )
+    {
+      alert('Please enter valid Surname ')
+      return false
+      
+    }
+    if(!de.test(Email))
+    {
+      alert('Invalid email!Please enter correct Email.')
+    }
+
+    if(!se.test(Password))
+    {
+      alert('Invalid password! Please enter correct password.')
+      
+    }
+    
+    
+    if(Password!=cpassword)
+    {
+      alert('Password does not matched!Please enter correct password.')
+    }
+  }
+
+    function setCookie() 
+    {
+
+    var cvalue=document.getElementById("txtName").value;
+    var pass=document.getElementById("txtpassword").value;
+
+    var sur=document.getElementById("txtsurname").value;
+    var em=document.getElementById("txtemail").value;
+    var cpass=document.getElementById("txtcpassword").value;
+
+
+
+        var d = new Date();
+        d.setTime(d.getTime() + (1*24*60*60*1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = "name=" + cvalue + ";" + expires + ";path=/";
+      alert("\n\nUserName="+cvalue+"\n\nSurname="+sur+"\n\nPassword="+pass+"\n\nEmail="+em+"\n\nExpire="+expires)
+      alert('Submitted successfully.')
+    }
+
+    </script>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <div class="header">
+      
+      <div class="logo">
+        <a href="index.html">
+        <img src="./logo1.jpg" alt="" style="  width:70px;height:70px;border: 4px #ffffff solid;";>
+        </a>
+      </div>
+
+      <h1 class="header"> Vastushilp Constructions </h1>
+
+     
+    </div>
+   
+ 
+ <main class="formc">
+  
+ <div class="container">
+    <div class="header1">
+    <h2>SIGN UP</h2>
+    
+    </div>
+
+    <form class="form" id="form" name="RegForm" method="post"  >
+
+    <div class="form-control">
+    <label id="display"> <b>First Name</b></label>
+    <input type="text"  name="Name" id="txtName" >
+    <i class="fa fa-check-circle"></i>
+    <i class="fa fa-exclamation-circle"></i>
+    <small>Error msg</small>
+    </div>
+
+    <div class="form-control">
+    <label id="display"><b>Last Name</b></label>
+    <input type="text"  name="surname" id="txtsurname" >
+    <i class="fa fa-check-circle"></i>
+    <i class="fa fa-exclamation-circle"></i>
+    <small>Error msg</small>
+    </div>
+    
+    <div class="form-control">
+    <label  id="display" for="uno"><b>Address</b></label>
+    <input type="text" name="uno" placeholder="Enter pin code" >
+    </div>
+
+    <div class="form-control">
+    <label  id="display" for="sno"><b>Phone Number</b></label>
+    <input type="text" name="sno" >
+    </div>
+
+    <div class="form-control">
+    <label  id="display" for="Email"><b>Email ID</b></label>
+    <input type="email" placeholder="Enter Email ID" name="email" id="txtemail" >
+    <i class="fa fa-check-circle"></i>
+    <i class="fa fa-exclamation-circle"></i>
+    <small>Error msg</small>
+    </div>
+
+    <div class="form-control">
+    <label  id="display" ><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="txtpassword"  >
+    <i class="fa fa-check-circle"></i>
+    <i class="fa fa-exclamation-circle"></i>
+    <small>Error msg</small>
+    </div>
+
+    <div class="form-control">
+    <label  id="display" ><b>Confirm Password</b></label>
+    <input type="password" placeholder="Enter password again"  name="cpassword" id="txtcpassword"  >
+    <i class="fa fa-check-circle"></i>
+    <i class="fa fa-exclamation-circle"></i>
+    <small>Error msg</small>
+    </div>
+
+    <div class="form-control ">
+      <button type="submit" name="submit" value="Submit" onclick="regular()">Submit</button>
+     
+
+    </div>
+
+    <div class="ds">
+      <p>Already have a account?<a href="">LOG IN</a></p>
+    </div>
+  
+
+    <div  style="background-color:#e5f3ff; text-decoration:none; ">
+    <a href="index.html">
+    <button type="button" class="cancelbtn">Cancel</button></a>
+    </div>
+    </form>
+  </div>
+  </main>
+<footer >
+   <div>
+        
+           <ul class="socialIcons">
+      <div class="copyright">
+       <p class="">&#169;2020 Vastushilp Constructions All rights reserved</p></div>
+     <div class="copy">
+       <p>CONNET WITH US</p>
+     </div>
+      
+  <li class="facebook"><a href="#"><i class="fa fa-fw fa-facebook"></i></a></li>
+  <li class="twitter"><a href="#"><i class="fa fa-fw fa-twitter"></i></a></li>
+  <li class="instagram"><a href="#"><i class="fa fa-fw fa-instagram"></i></a></li>
+  <li class="youtube"><a href="#"><i class="fa fa-fw fa-youtube"></i></a></li>
+  <li class="linkedin"><a href="#"><i class="fa fa-fw fa-linkedin"></i></a></li>
+  <li class="whatsapp"><a href="#"><i class="fa fa-fw fa-whatsapp"></i></a></li>
+
+</ul>
+   </div>
+</footer>
+  </body>
+</html>
